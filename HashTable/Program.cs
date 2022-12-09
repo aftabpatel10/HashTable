@@ -26,7 +26,8 @@ namespace HashTable
         {
             Console.WriteLine("Welcome to the Demo Program on HashTables in DSA .\n");
             Console.WriteLine("Please sslect any one from below given options :\n" +
-                "1 : Checking frequency of occurence of words in a single line statement (UC1).");
+               "1 : Checking frequency of occurence of words in a single line statement (UC1).\n" +
+                "2 : Checking frequency of occurence of words in a paragraph (UC2).\n");
             int option = Convert.ToInt32((string)Console.ReadLine());
             switch (option)
             {
@@ -34,6 +35,15 @@ namespace HashTable
                 case 1:
                     string paragraph = "To be or not to be";
                     CountNumbOfOccurence(paragraph);
+                    break;
+                //UC2 (Counting frequency of occurrence of words in a paragraph.
+                case 2:                     
+                    string paragraph1 = "Paranoids are not paranoid " +
+                        "because they are paranoid but " +
+                        "because they keep putting themselves " +
+                        "deliberately into paranoid avoidable " +
+                        "situations";
+                    CountNumbOfOccurence(paragraph1);
                     break;
                 default:
                     Console.WriteLine("Invalid option selected ! Please try again .");
